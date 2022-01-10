@@ -125,7 +125,7 @@ def main(_):
         step_result = env.step(actions)
 
         board = step_result.observation[_OBSERVATION_BOARD]
-        reward = step_result.observation[_OBSERVATION_REWARD]
+        reward = step_result.reward
 
         _render_window(board, window_surface, reward)
 
